@@ -13,12 +13,10 @@ set showmode
 set showcmd
 set visualbell
 set nerdtree
-" --- Enable IdeaVim plugins https://jb.gg/ideavim-plugins
+set highlightedyank
 
-" Highlight copied text
-Plug 'machakann/vim-highlightedyank'
-" Commentary plugin
-Plug 'tpope/vim-commentary'
+let g:highlightedyank_highlight_color = "rgba(218, 192, 109, 100)"
+let g:highlightedyank_highlight_duration = 50
 
 let mapleader = " "
 
@@ -32,5 +30,3 @@ let mapleader = " "
 map <leader>nt :NERDTreeToggle<CR>
 
 
-"" Map \b to toggle the breakpoint on the current line
-"map \b <Action>(ToggleLineBreakpoint)
