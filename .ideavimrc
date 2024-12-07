@@ -29,6 +29,7 @@ let mapleader = " "
 " Open NERDTree (use q to exit)
 map <leader>nt :NERDTreeToggle<CR>
 
+" map switch tabs to alt +h, alt + l
 nmap <A-l> <Action>(NextTab)
 nmap <A-h> <Action>(PreviousTab)
 
