@@ -14,6 +14,7 @@ set showcmd
 set visualbell
 set nerdtree
 set highlightedyank
+set clipboard+=unnamed
 
 let g:highlightedyank_highlight_color = "rgba(218, 192, 109, 100)"
 let g:highlightedyank_highlight_duration = 50
@@ -32,5 +33,7 @@ map <leader>nt :NERDTreeToggle<CR>
 " map switch tabs to alt +h, alt + l
 nmap <A-l> <Action>(NextTab)
 nmap <A-h> <Action>(PreviousTab)
-
-
+map <leader>rn <Action>(RenameElement)
+map <leader>em <Action>(ExtractMethod)
+map <leader>iv <Action>(IntroduceVariable)
+map <leader>if <Action>(IntroduceField)
